@@ -48,6 +48,7 @@ flex
 flex-col
 gap-y-3
 relative
+overflow-scroll
 `
 
 export const Button = tw.button`
