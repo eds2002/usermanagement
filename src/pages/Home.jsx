@@ -1,5 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind"
-import {Navbar, Dashboard, CreateUser} from "../components/"
+import {Navbar, Dashboard} from "../components/"
 
 const Home = () => {
   return (

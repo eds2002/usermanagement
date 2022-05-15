@@ -70,7 +70,6 @@ active:bg-slate-700
 `
 
 const DeleteUser = ({currentUser}) => {
-    const modal = useSelector((state) => state.deleteUserModal.value)
     const dispatch = useDispatch()
 
     const handleDelete = async (e)=>{

@@ -1,6 +1,4 @@
 import tw from "tailwind-styled-components/dist/tailwind"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faGears, faCircle } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -22,13 +20,6 @@ h-[10vh]
 text-center
 `
 
-const User = tw.nav`
-flex
-px-[25px]
-items-center
-justify-center
-gap-x-5
-`
 
 const Logo = tw.h1`
 text-xl
@@ -36,20 +27,6 @@ font-bold
 my-[35px]
 `
 
-
-const Image = tw.div`
-w-[40px]
-h-[40px]
-rounded-full
-bg-gray-400
-`
-
-const Text = tw.p`
-text-gray-500
-hover:text-slate-800
-cursor-pointer
-transition
-`
 
 
 const Navbar = () => {

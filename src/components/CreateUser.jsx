@@ -2,7 +2,6 @@ import tw from "tailwind-styled-components/dist/tailwind"
 import {useDispatch, useSelector} from 'react-redux'
 import { change } from "../features/adduser.feature"
 import { addUsers } from "../features/users.feature"
-import { useEffect } from "react"
 import axios from 'axios'
 
 const Container = tw.section`

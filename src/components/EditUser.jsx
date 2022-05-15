@@ -86,7 +86,6 @@ active:bg-slate-700
 `
 
 const EditUser = ({currentUser}) => {
-    const display = useSelector((state) => state.display.value)
     const dispatch = useDispatch()
     const cancel = (e) =>{
         e.preventDefault()
