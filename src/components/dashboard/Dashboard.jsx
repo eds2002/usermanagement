@@ -22,7 +22,7 @@ const Dashboard = () => {
 
   useEffect(()=>{
     getUsers()
-  },[usersArray])
+  },[])
 
   const dispatch = useDispatch();
 
