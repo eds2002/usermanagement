@@ -13,7 +13,7 @@ import axios from 'axios'
 const Dashboard = () => {
 
   const getUsers = async () =>{
-    await axios.get('https://user-management-mysql.herokuapp.com//users/').then((res)=>{
+    await axios.get('https://user-management-mysql.herokuapp.com/users/').then((res)=>{
       dispatch(addUsers(res.data))
     })
   }
