@@ -106,7 +106,7 @@ const CreateUser = () => {
         let date = new Date()
 
         // Communicating with backend
-        await axios.post('https://user-management-mysql.herokuapp.com//users/post',{
+        await axios.post('https://user-management-mysql.herokuapp.com/users/post',{
             firstName: firstName,
             lastName: lastName,
             email: email,
