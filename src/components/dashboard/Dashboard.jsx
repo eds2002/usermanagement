@@ -11,6 +11,7 @@ import axios from 'axios'
 
 
 const Dashboard = () => {
+  const dispatch = useDispatch();
 
   const getUsers = async () =>{
     await axios.get('https://user-management-mysql.herokuapp.com/users/').then((res)=>{
@@ -18,13 +19,13 @@ const Dashboard = () => {
     })
   }
 
+  // Getting the users array
   let usersArray = useSelector((state)=> state.usersArray.users)
 
   useEffect(()=>{
     getUsers()
   },[])
 
-  const dispatch = useDispatch();
 
   const [currentUser, setCurrentUser] = useState({
     firstName:null,
@@ -48,6 +49,7 @@ const Dashboard = () => {
     dispatch(changeEditState())
   }
 
+  // Deleting user logic
   const deleteUser = (e) =>{
     const parent = e.target.parentElement.parentElement
     setCurrentUser({
@@ -62,20 +64,16 @@ const Dashboard = () => {
     
   }
   
+  // Get booleans for modals
   const displayEditUserModal = useSelector((state) => state.editUserDisplay.display)
   const displayDeleteUserModal = useSelector((state)=> state.deleteUserModal.value)
-
-    // setUsers(res.data)
-
-    
-
 
   return (
     <Container>
         <Layout>
             <TextWrapper>
-                <Date>05/14/2022</Date>
-                <Welcome>Hi Ed, welcome back!</Welcome>
+                <Date></Date>
+                <Welcome>Hi User, welcome back!</Welcome>
             </TextWrapper>
             <DashWrapper>
                 <Label>
