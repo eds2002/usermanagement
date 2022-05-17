@@ -14,7 +14,7 @@ const Dashboard = () => {
   const dispatch = useDispatch();
 
   const getUsers = async () =>{
-    await axios.get('https://user-management-mysql.herokuapp.com/users/').then((res)=>{
+    await axios.get('https://user-management-mysql.herokuapp.com/users').then((res)=>{
       dispatch(addUsers(res.data))
     })
   }
